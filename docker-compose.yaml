@@ -3,3 +3,6 @@ services:
     build: .
     ports:
       - "80:80"
+    volumes:
+      - ./docker/xdebug.ini:/usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+      - ./docker/error_reporting.ini:/usr/local/etc/php/conf.d/error_reporting.ini
